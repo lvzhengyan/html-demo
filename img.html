@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="xxx"
+        src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1605414148396&di=03e8cad9c1c92d4ab7da6c071aeeeb92&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201706%2F08%2F20170608103927_wFTuZ.jpeg"
+        alt="狗子的图片">
+    <script>
+        xxx.onload = function () {
+            console.log("image success");
+        }
+        xxx.onerror = function () {
+            console.log("image failed");
+            xxx.src =
+                "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3136626573,2216251976&fm=26&gp=0.jpg";
+        }
+    </script>
+</body>
+
+</html>
